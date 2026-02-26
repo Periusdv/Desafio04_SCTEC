@@ -12,5 +12,15 @@ function calcularDesconto() {
     } else {
         let valorFinal = valor - (valor * desconto) / 100;
         resultado.innerText = "Valor Final: R$ " + valorFinal.toFixed(2);
+        alert(
+            "Valor Inicial: R$ " +
+            valor.toFixed(2) +
+            "\n" +
+            "Desconto: " +
+            desconto +
+            "%\n" +
+            "Valor Final: R$ " +
+            valorFinal.toFixed(2),
+        );
     }
 }
